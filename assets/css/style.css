@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
     --primary-color: #0f1b4c;
@@ -60,10 +65,11 @@ a {
 
 .hero-wrap {
     background: #e6f0ff;
-    height: 100vh;
+    height: calc(100vh - 90px);
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .navbar {
@@ -103,15 +109,11 @@ a {
     padding: 13px 16px;
 }
 
-.hero {
-    margin-top: 130px;
-}
-
-.hero .info {
+.hero-wrap .info {
     width: 51%;
 }
 
-.hero .sub-title {
+.hero-wrap .sub-title {
     color: #687691;
     font-size: 1.8rem;
     font-weight: 500;
@@ -119,7 +121,7 @@ a {
     letter-spacing: 0.01em;
 }
 
-.hero .title {
+.hero-wrap .title {
     color: #000336;
     font-size: 6.2rem;
     font-weight: 700;
@@ -127,7 +129,7 @@ a {
     margin-top: 8px;
 }
 
-.hero .desc {
+.hero-wrap .desc {
     color: #5a6473;
     font-size: 1.8rem;
     font-weight: 400;
@@ -135,12 +137,12 @@ a {
     margin-top: 30px;
 }
 
-.hero .btn {
+.hero-wrap .btn {
     margin-top: 40px;
     min-width: 170px;
 }
 
-.hero .img-hero {
+.hero-wrap .img-hero {
     position: absolute;
     bottom: 0;
     right: calc((100vw - 1110px) / 2 - 100px);
