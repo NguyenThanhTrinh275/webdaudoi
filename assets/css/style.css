@@ -162,8 +162,21 @@ a {
 
 .client .img {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 70px;
+    align-items: center;
+}
+
+.client .img a {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding: 0 42px;
+}
+
+.client .img a:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 14px;
 }
 
 /* Guides */
